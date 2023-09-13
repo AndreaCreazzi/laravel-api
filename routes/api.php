@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\ProjectController;
+use App\Http\Controllers\Api\ContactController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::apiResource('projects', ProjectController::class);
+
+Route::post('/contact-message', [ContactController::class, 'message']);
