@@ -16,6 +16,7 @@
 
 <body>
     <h1>Nuovo Messaggio Inviato</h1>
+    <p>{{ $content }}</p>
 </body>
 
 </html>
